@@ -34,8 +34,8 @@ const ServicesSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4">
-            Our Signature Services
+          <h2 className="font-poppins text-4xl md:text-5xl font-bold text-primary mb-4">
+            Our Services
           </h2>
           <p className="font-poppins text-lg text-muted-foreground max-w-2xl mx-auto">
             Discover our carefully curated selection of premium beauty and wellness services
@@ -65,7 +65,7 @@ const ServicesSection = () => {
                     <span className="inline-block px-3 py-1 bg-primary/90 text-primary-foreground text-xs font-poppins rounded-full mb-2">
                       {service.category}
                     </span>
-                    <h3 className="font-playfair text-2xl font-bold text-white">
+                    <h3 className="font-poppins text-2xl font-bold text-white">
                       {service.name}
                     </h3>
                   </div>
@@ -75,7 +75,7 @@ const ServicesSection = () => {
                     {service.description}
                   </p>
                   <div className="flex items-center justify-between">
-                    <span className="font-playfair text-2xl font-bold text-primary">
+                    <span className="font-poppins text-2xl font-bold text-primary">
                       {service.price}
                     </span>
                   </div>

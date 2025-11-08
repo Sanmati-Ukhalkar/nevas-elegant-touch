@@ -108,8 +108,6 @@ export default {
         "glow": "glow 2s ease-in-out infinite"
       },
       fontFamily: {
-        playfair: ['Playfair Display', 'serif'],
-        cormorant: ['Cormorant Garamond', 'serif'],
         poppins: ['Poppins', 'sans-serif']
       },
     },

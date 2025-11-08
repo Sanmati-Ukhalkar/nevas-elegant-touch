@@ -12,7 +12,7 @@ const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
     const timer = setTimeout(() => {
       setIsVisible(false);
       setTimeout(onLoadingComplete, 500);
-    }, 2500);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, [onLoadingComplete]);
@@ -33,7 +33,7 @@ const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
         className="text-center"
       >
         <motion.h1
-          className="font-playfair text-5xl md:text-7xl font-bold bg-gradient-gold bg-clip-text text-transparent mb-4"
+          className="font-poppins text-5xl md:text-7xl font-bold bg-gradient-gold bg-clip-text text-transparent mb-4"
           animate={{
             backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
           }}
@@ -52,9 +52,9 @@ const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.8 }}
-          className="font-cormorant text-xl md:text-2xl text-primary"
+          className="font-poppins text-xl md:text-2xl text-primary"
         >
-          Where Beauty Meets Elegance
+          Welcome to Neva's Salon
         </motion.p>
       </motion.div>
     </motion.div>

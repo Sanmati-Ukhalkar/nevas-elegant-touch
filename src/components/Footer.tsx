@@ -56,7 +56,7 @@ const Footer = () => {
 
         <div className="border-t border-[#d6c0a6]/20 pt-8 text-center">
           <p className="font-poppins text-sm opacity-70">
-            © 2025 Neva's Salon. Designed with elegance.
+            © 2025 Neva's Salon. Designed with grace and detail.
           </p>
         </div>
       </div>

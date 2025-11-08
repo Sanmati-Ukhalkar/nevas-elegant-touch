@@ -31,7 +31,7 @@ const ContactSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="font-poppins text-4xl md:text-5xl font-bold text-primary mb-4">
             Visit Us
           </h2>
           <p className="font-poppins text-lg text-muted-foreground">
@@ -52,7 +52,7 @@ const ContactSection = () => {
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
                 <item.icon className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="font-playfair text-xl font-bold text-foreground mb-2">
+              <h3 className="font-poppins text-xl font-bold text-foreground mb-2">
                 {item.title}
               </h3>
               <p className="font-poppins text-muted-foreground">{item.detail}</p>
