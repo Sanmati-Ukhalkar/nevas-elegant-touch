@@ -8,35 +8,48 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Neva's Salon - Luxury Cream & Espresso Theme */
+    --background: 34 44% 97%;
+    --foreground: 20 20% 18%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 34 44% 98%;
+    --card-foreground: 20 20% 18%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 34 44% 98%;
+    --popover-foreground: 20 20% 18%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 35 38% 54%;
+    --primary-foreground: 34 44% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 35 30% 92%;
+    --secondary-foreground: 20 20% 18%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 35 30% 92%;
+    --muted-foreground: 20 15% 50%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 35 45% 65%;
+    --accent-foreground: 20 20% 18%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 34 44% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 35 25% 88%;
+    --input: 35 25% 88%;
+    --ring: 35 38% 54%;
 
-    --radius: 0.5rem;
+    --radius: 1.5rem;
+    
+    /* Luxury textures and effects */
+    --gold-glow: 35 45% 65%;
+    --cream-light: 34 44% 98%;
+    --espresso: 20 20% 18%;
+    --gold-accent: 35 38% 54%;
+    
+    /* Overlay gradients */
+    --gradient-cream: linear-gradient(135deg, hsl(34 44% 97%), hsl(34 40% 95%));
+    --gradient-gold: linear-gradient(135deg, hsl(35 38% 54%), hsl(35 45% 65%));
+    --shadow-gold: 0 10px 40px -10px hsl(35 38% 54% / 0.3);
+    --shadow-glow: 0 0 30px hsl(35 45% 65% / 0.2);
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,33 +69,41 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Neva's Salon - Dark Espresso Theme */
+    --background: 20 25% 8%;
+    --foreground: 35 30% 88%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 20 25% 10%;
+    --card-foreground: 35 30% 88%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 20 25% 10%;
+    --popover-foreground: 35 30% 88%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 35 45% 65%;
+    --primary-foreground: 20 25% 8%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 20 20% 15%;
+    --secondary-foreground: 35 30% 88%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 20 20% 15%;
+    --muted-foreground: 35 20% 60%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 35 50% 60%;
+    --accent-foreground: 35 30% 88%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 35 30% 88%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 20 20% 20%;
+    --input: 20 20% 20%;
+    --ring: 35 45% 65%;
+    
+    /* Dark mode textures */
+    --gold-glow: 35 50% 60%;
+    --gradient-cream: linear-gradient(135deg, hsl(20 25% 8%), hsl(20 20% 12%));
+    --gradient-gold: linear-gradient(135deg, hsl(35 45% 65%), hsl(35 50% 70%));
+    --shadow-gold: 0 10px 40px -10px hsl(35 45% 65% / 0.4);
+    --shadow-glow: 0 0 40px hsl(35 50% 60% / 0.3);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -100,6 +121,59 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-['Poppins',sans-serif];
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-['Playfair_Display',serif];
+  }
+}
+
+@layer utilities {
+  .font-playfair {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .font-cormorant {
+    font-family: 'Cormorant Garamond', serif;
+  }
+  
+  .font-poppins {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .shadow-gold {
+    box-shadow: var(--shadow-gold);
+  }
+  
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .bg-gradient-cream {
+    background: var(--gradient-cream);
+  }
+  
+  .bg-gradient-gold {
+    background: var(--gradient-gold);
+  }
+  
+  .texture-overlay {
+    position: relative;
+  }
+  
+  .texture-overlay::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        hsl(var(--primary) / 0.02) 2px,
+        hsl(var(--primary) / 0.02) 4px
+      );
+    pointer-events: none;
   }
 }
