@@ -33,7 +33,7 @@ const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
         className="text-center"
       >
         <motion.h1
-          className="font-poppins text-5xl md:text-7xl font-bold bg-gradient-gold bg-clip-text text-transparent mb-4"
+          className="font-poppins text-4xl md:text-6xl lg:text-7xl font-bold bg-gradient-gold bg-clip-text text-transparent mb-3 md:mb-4 px-4"
           animate={{
             backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
           }}
@@ -52,7 +52,7 @@ const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.8 }}
-          className="font-poppins text-xl md:text-2xl text-primary"
+          className="font-poppins text-lg md:text-xl lg:text-2xl text-primary px-4"
         >
           Welcome to Neva's Salon
         </motion.p>

@@ -22,24 +22,24 @@ const ContactSection = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-gradient-cream texture-overlay">
+    <section className="py-12 md:py-20 px-4 bg-gradient-cream texture-overlay">
       <div className="container mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-10 md:mb-16"
         >
-          <h2 className="font-poppins text-4xl md:text-5xl font-bold text-primary mb-4">
+          <h2 className="font-poppins text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-3 md:mb-4">
             Visit Us
           </h2>
-          <p className="font-poppins text-lg text-muted-foreground">
+          <p className="font-poppins text-base md:text-lg text-muted-foreground px-4">
             We'd love to welcome you to our salon
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-3 gap-6 md:gap-8 mb-8 md:mb-12">
           {contactDetails.map((item, index) => (
             <motion.div
               key={item.title}
@@ -47,15 +47,15 @@ const ContactSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="text-center p-8 bg-card rounded-3xl shadow-gold hover:shadow-glow transition-all duration-300"
+              className="text-center p-6 md:p-8 bg-card rounded-2xl md:rounded-3xl shadow-gold hover:shadow-glow transition-all duration-300"
             >
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
-                <item.icon className="w-8 h-8 text-primary" />
+              <div className="inline-flex items-center justify-center w-14 h-14 md:w-16 md:h-16 bg-primary/10 rounded-full mb-3 md:mb-4">
+                <item.icon className="w-7 h-7 md:w-8 md:h-8 text-primary" />
               </div>
-              <h3 className="font-poppins text-xl font-bold text-foreground mb-2">
+              <h3 className="font-poppins text-lg md:text-xl font-bold text-foreground mb-1.5 md:mb-2">
                 {item.title}
               </h3>
-              <p className="font-poppins text-muted-foreground">{item.detail}</p>
+              <p className="font-poppins text-sm md:text-base text-muted-foreground">{item.detail}</p>
             </motion.div>
           ))}
         </div>
@@ -69,7 +69,7 @@ const ContactSection = () => {
         >
           <Button
             size="lg"
-            className="bg-primary hover:bg-primary/90 text-primary-foreground font-poppins px-8 py-6 rounded-full shadow-glow transition-all hover:scale-105"
+            className="bg-primary hover:bg-primary/90 text-primary-foreground font-poppins px-6 md:px-8 py-5 md:py-6 text-sm md:text-base rounded-full shadow-glow transition-all hover:scale-105 active:scale-95 min-h-[48px]"
             onClick={() => window.open("https://wa.me/919876543210", "_blank")}
           >
             <MessageCircle className="w-5 h-5 mr-2" />
