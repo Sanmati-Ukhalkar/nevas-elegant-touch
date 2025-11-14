@@ -39,8 +39,9 @@ const AboutSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-          <h2 className="font-poppins text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4 md:mb-6">
+          <h2 className="font-poppins text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4 md:mb-6 relative inline-block">
             About Us
+            <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-gold"></span>
           </h2>
             <div className="space-y-3 md:space-y-4 font-poppins text-base md:text-lg text-muted-foreground">
               <p>

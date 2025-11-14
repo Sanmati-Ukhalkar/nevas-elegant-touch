@@ -34,8 +34,9 @@ const ServicesSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-10 md:mb-16"
         >
-          <h2 className="font-poppins text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-3 md:mb-4">
+          <h2 className="font-poppins text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-3 md:mb-4 relative inline-block">
             Our Services
+            <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-gold"></span>
           </h2>
           <p className="font-poppins text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
             Discover our carefully curated selection of premium beauty and wellness services
