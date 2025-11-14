@@ -13,11 +13,8 @@ const Header = () => {
         <img 
           src={logo} 
           alt="Neva's Salon" 
-          className="h-12 md:h-16 lg:h-20 w-auto mb-1 md:mb-2"
+          className="h-12 md:h-16 lg:h-20 w-auto"
         />
-        <p className="font-poppins text-xs md:text-sm lg:text-base text-muted-foreground font-light">
-          Elegance in Every Detail
-        </p>
       </div>
     </motion.header>
   );

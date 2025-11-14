@@ -31,8 +31,9 @@ const ContactSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-10 md:mb-16"
         >
-          <h2 className="font-poppins text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-3 md:mb-4">
+          <h2 className="font-poppins text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-3 md:mb-4 relative inline-block">
             Visit Us
+            <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-gold"></span>
           </h2>
           <p className="font-poppins text-base md:text-lg text-muted-foreground px-4">
             We'd love to welcome you to our salon
@@ -50,7 +51,7 @@ const ContactSection = () => {
               className="text-center p-6 md:p-8 bg-card rounded-2xl md:rounded-3xl shadow-gold hover:shadow-glow transition-all duration-300"
             >
               <div className="inline-flex items-center justify-center w-14 h-14 md:w-16 md:h-16 bg-primary/10 rounded-full mb-3 md:mb-4">
-                <item.icon className="w-7 h-7 md:w-8 md:h-8 text-primary" />
+                <item.icon className="w-7 h-7 md:w-8 md:h-8 text-gold" />
               </div>
               <h3 className="font-poppins text-lg md:text-xl font-bold text-foreground mb-1.5 md:mb-2">
                 {item.title}
@@ -69,7 +70,7 @@ const ContactSection = () => {
         >
           <Button
             size="lg"
-            className="bg-primary hover:bg-primary/90 text-primary-foreground font-poppins px-6 md:px-8 py-5 md:py-6 text-sm md:text-base rounded-full shadow-glow transition-all hover:scale-105 active:scale-95 min-h-[48px]"
+            className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-primary-foreground font-poppins px-6 md:px-8 py-5 md:py-6 text-sm md:text-base rounded-full shadow-glow transition-all hover:scale-105 hover:ring-2 hover:ring-gold active:scale-95 min-h-[48px]"
             onClick={() => window.open("https://wa.me/919876543210", "_blank")}
           >
             <MessageCircle className="w-5 h-5 mr-2" />

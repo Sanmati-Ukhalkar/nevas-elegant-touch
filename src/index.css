@@ -40,6 +40,7 @@ All colors MUST be HSL.
     --radius: 0.875rem;
     
     /* Luxury textures and effects */
+    --gold: 43 65% 52%;
     --gold-glow: 23 47% 58%;
     --cream-light: 36 29% 96%;
     --teal-primary: 176 92% 16%;
@@ -52,6 +53,7 @@ All colors MUST be HSL.
     --gradient-copper: linear-gradient(135deg, hsl(23 47% 58%), hsl(23 38% 40%));
     --gradient-button: linear-gradient(135deg, hsl(176 92% 16%), hsl(172 82% 24%));
     --gradient-highlight: linear-gradient(135deg, hsl(23 42% 52%), hsl(23 47% 58%));
+    --gradient-gold: linear-gradient(135deg, hsl(43 65% 52%), hsl(23 47% 58%));
     --shadow-copper: 0 10px 40px -10px hsl(23 47% 58% / 0.3);
     --shadow-glow: 0 0 30px hsl(23 47% 58% / 0.2);
 
@@ -103,10 +105,12 @@ All colors MUST be HSL.
     --ring: 23 47% 65%;
     
     /* Dark mode textures */
+    --gold: 43 70% 58%;
     --gold-glow: 23 47% 65%;
     --gradient-cream: linear-gradient(135deg, hsl(176 30% 8%), hsl(176 25% 12%));
     --gradient-copper: linear-gradient(135deg, hsl(23 47% 65%), hsl(23 42% 70%));
     --gradient-button: linear-gradient(135deg, hsl(172 82% 24%), hsl(176 92% 16%));
+    --gradient-gold: linear-gradient(135deg, hsl(43 70% 58%), hsl(23 47% 65%));
     --shadow-copper: 0 10px 40px -10px hsl(23 47% 65% / 0.4);
     --shadow-glow: 0 0 40px hsl(23 47% 65% / 0.3);
     --sidebar-background: 240 5.9% 10%;
