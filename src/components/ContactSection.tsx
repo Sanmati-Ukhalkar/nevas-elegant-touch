@@ -18,7 +18,7 @@ const ContactSection = () => {
     {
       icon: Phone,
       title: "Call Us",
-      detail: "70404 20562",
+      detail: "+91 70404 20562",
       link: "tel:+917040420562",
     },
   ];
