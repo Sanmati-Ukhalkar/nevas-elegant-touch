@@ -16,7 +16,7 @@ const AboutSection = () => {
             <div className="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-gold">
               <img
                 src={aboutImage}
-                alt="Neva's Salon Interior"
+                alt="Neva's Hair & Beauty Lounge Interior"
                 className="w-full h-[300px] md:h-[400px] lg:h-[500px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent" />
@@ -45,7 +45,7 @@ const AboutSection = () => {
           </h2>
             <div className="space-y-3 md:space-y-4 font-poppins text-base md:text-lg text-muted-foreground">
               <p>
-                At Neva's Salon, we specialize in delivering premium salon experiences with attention to every detail. Our curated menu offers a touch of luxury for every guest.
+                At Neva's Hair & Beauty Lounge, we specialize in delivering premium salon experiences with attention to every detail. Our curated menu offers a touch of luxury for every guest.
               </p>
             </div>
             <div className="mt-6 md:mt-8 grid grid-cols-3 gap-3 md:gap-4">
