@@ -45,7 +45,7 @@ const AboutSection = () => {
           </h2>
             <div className="space-y-3 md:space-y-4 font-poppins text-base md:text-lg text-muted-foreground">
               <p>
-                Luxury. Comfort. Style. 5+ professionals. Personalized care, modern looks.
+                Luxury. Comfort. Style. 15+ professionals. Personalized care, modern looks.
               </p>
             </div>
             <div className="mt-6 md:mt-8 grid grid-cols-3 gap-3 md:gap-4">
