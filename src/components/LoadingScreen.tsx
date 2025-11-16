@@ -46,7 +46,7 @@ const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
             backgroundSize: "200% auto",
           }}
         >
-          Neva's Salon
+          Neva's Hair & Beauty Lounge
         </motion.h1>
         <motion.p
           initial={{ opacity: 0 }}
@@ -54,7 +54,7 @@ const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
           transition={{ delay: 0.6, duration: 0.8 }}
           className="font-poppins text-lg md:text-xl lg:text-2xl text-primary px-4"
         >
-          Welcome to Neva's Salon
+          Welcome to Neva's Hair & Beauty Lounge
         </motion.p>
       </motion.div>
     </motion.div>

@@ -55,7 +55,7 @@ const Admin = () => {
       setServices(getServices());
       toast({
         title: "Login Successful",
-        description: "Welcome to Neva's Salon Admin Panel",
+        description: "Welcome to Neva's Hair & Beauty Lounge Admin Panel",
       });
     } else {
       toast({
