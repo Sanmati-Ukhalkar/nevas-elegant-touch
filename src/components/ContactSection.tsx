@@ -7,17 +7,17 @@ const ContactSection = () => {
     {
       icon: MapPin,
       title: "Visit Us",
-      detail: "Neva's Hair & Beauty Lounge, Chandwad, MH",
+      detail: "Neva's Salon, MG Road, Nashik",
     },
     {
       icon: Clock,
       title: "Hours",
-      detail: "Sun–Fri: 9:00 AM – 8:00 PM | Sat: Closed",
+      detail: "Mon–Sun: 9:00 AM – 8:00 PM",
     },
     {
       icon: Phone,
       title: "Call Us",
-      detail: "+91 7040420562",
+      detail: "+91 9876543210",
     },
   ];
 
@@ -71,7 +71,7 @@ const ContactSection = () => {
           <Button
             size="lg"
             className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-primary-foreground font-poppins px-6 md:px-8 py-5 md:py-6 text-sm md:text-base rounded-full shadow-glow transition-all hover:scale-105 hover:ring-2 hover:ring-gold active:scale-95 min-h-[48px]"
-            onClick={() => window.open("https://wa.me/917040420562?text=Hi%20Neva%E2%80%99s%20Hair%20%26%20Beauty%20Lounge!%20I%20am%20%5BCustomer%20Name%5D%20and%20would%20like%20to%20book%20an%20appointment.", "_blank")}
+            onClick={() => window.open("https://wa.me/919876543210", "_blank")}
           >
             <MessageCircle className="w-5 h-5 mr-2" />
             Book via WhatsApp

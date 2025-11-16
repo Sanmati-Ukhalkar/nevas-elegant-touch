@@ -12,7 +12,7 @@ const Header = () => {
       <div className="container mx-auto max-w-7xl flex flex-col items-center justify-center">
         <img 
           src={logo} 
-          alt="Neva's Hair & Beauty Lounge" 
+          alt="Neva's Salon" 
           className="h-12 md:h-16 lg:h-20 w-auto"
         />
       </div>
